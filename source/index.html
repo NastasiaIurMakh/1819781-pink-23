@@ -12,7 +12,7 @@
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a>
                 Главная
@@ -106,15 +106,15 @@
         </div>
       </section>
       <section class="reviews">
-        <div class="reviews__wrapper">
+        <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы о нас</h2>
-          <div class="reviews__list">
-            <blockquote class="reviews__item">
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item">
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
           </div>
-          <p class="reviews__toggles">
+          <p class="reviews__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--current" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
@@ -122,65 +122,67 @@
         </div>
       </section>
       <section class="tariff">
-        <h2 class="visually-hidden">Тарифы</h2>
-        <table class="tariff__table">
-          <tr class="tariff__header">
-            <th class="tariff__hidden"></th>
-            <th class="tariff__name-price tariff__basic">
-              <p class="tariff__name">БАЗА</p>
-              <p class="tariff__price">1,99 USD</p>
-            </th>
-            <th class="tariff__name-price tariff__name-price--hit tariff__standart">
-              <p class="tariff__name">СТАНДАРТ</p>
-              <p class="tariff__price">3,99 USD</p>
-            </th>
-            <th class="tariff__name-price tariff__unlim">
-              <p class="tariff__name">АНЛИМ</p>
-              <p class="tariff__price">9,99 USD</p>
-            </th>
-          </tr>
-          <tr class="tariff__pink">
-            <td class="tariff__variation">Розовый фильтр</td>
-            <td class="yes"><img src="img/yes.svg" alt="yes"></td>
-            <td class="yes variation--hit"><img src="img/yes.svg" alt="yes"></td>
-            <td class="yes"><img src="img/yes.svg" alt="yes"></td>
-          </tr>
-          <tr class="tariff__smile">
-            <td class="tariff__variation">Смайлики</td>
-            <td class="no"><img src="img/no.svg" alt="no"></td>
-            <td class="yes variation--hit"><img src="img/yes.svg" alt="yes"></td>
-            <td class="yes"><img src="img/yes.svg" alt="yes"></td>
-          </tr>
-          <tr class="tariff__comments">
-            <td class="tariff__variation">Комментарии</td>
-            <td class="no"><img src="img/no.svg" alt="no"></td>
-            <td class="no variation--hit"><img src="img/no.svg" alt="no"></td>
-            <td class="yes"><img src="img/yes.svg" alt="yes"></td>
-          </tr>
-        </table>
-        <p class="reviews__toggles">
-          <button class="tariff__toggle " type="button">1</button>
-          <button class="tariff__toggle tariff__toggle--current" type="button">2</button>
-          <button class="tariff__toggle" type="button">3</button>
-        </p>
+        <div class="tariff__wrapper slider">
+          <h2 class="visually-hidden">Тарифы</h2>
+          <table class="tariff__table">
+            <tr class="tariff__header">
+              <th class="tariff__hidden"></th>
+              <th class="tariff__name-price">
+                <p class="tariff__name">БАЗА</p>
+                <p class="tariff__price">1,99 USD</p>
+              </th>
+              <th class="tariff__name-price tariff__name-price--hit tariff__standart">
+                <p class="tariff__name">СТАНДАРТ</p>
+                <p class="tariff__price">3,99 USD</p>
+              </th>
+              <th class="tariff__name-price tariff__unlim">
+                <p class="tariff__name">АНЛИМ</p>
+                <p class="tariff__price">9,99 USD</p>
+              </th>
+            </tr>
+            <tr class="tariff__pink">
+              <td class="tariff__variation">Розовый фильтр</td>
+              <td class="tariff__yes"><img src="img/yes.svg" alt="yes"></td>
+              <td class="tariff__yes tariff__yes--hit"><img src="img/yes.svg" alt="yes"></td>
+              <td class="tariff__yes"><img src="img/yes.svg" alt="yes"></td>
+            </tr>
+            <tr class="tariff__smile">
+              <td class="tariff__variation">Смайлики</td>
+              <td class="tariff__no"><img src="img/no.svg" alt="no"></td>
+              <td class="tariff__yes tariff__yes--hit"><img src="img/yes.svg" alt="yes"></td>
+              <td class="tariff__yes"><img src="img/yes.svg" alt="yes"></td>
+            </tr>
+            <tr class="tariff__comments">
+              <td class="tariff__variation">Комментарии</td>
+              <td class="tariff__no"><img src="img/no.svg" alt="no"></td>
+              <td class="tariff__no tariff__no--hit"><img src="img/no.svg" alt="no"></td>
+              <td class="tariff__yes"><img src="img/yes.svg" alt="yes"></td>
+            </tr>
+          </table>
+          <p class="tariff__toggles slider__toggles">
+            <button class="slider__toggle " type="button">1</button>
+            <button class="slider__toggle slider__toggle--current" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="contacts__text">
+        <div class="page-footer__text">
           <p>Остались вопросы?</p>
           <p>Свяжитесь с нами!</p>
         </div>
         <div class="page-footer__contacts contacts">
-          <div class="contacts__item contats__item--phone">
+          <div class="contacts__item contacts__item--phone">
             <b class="contats__text">Звоните:</b>
             <a class="contats__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </div>
-          <div class="contacts__item contats__item--mail">
+          <div class="contacts__item contacts__item--mail">
             <b class="contats__text">Пишите:</b>
             <a class="contats__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
-          <div class="contacts__item contats__item--address">
+          <div class="contacts__item contacts__item--address">
             <b class="contats__text">Приезжайте в гости:</b>
             <a class="contats__link" href="#">ул. Большая<br>
               Конюшенная, 19/8</a>
@@ -193,7 +195,7 @@
           <div class="links__logo">
             <img src="img/logo.svg" width="145" height="40" alt="PINK logotype">
           </div>
-          <ul class="links__social social">
+          <ul class="links__social-list social">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"><img src="img/socials/twitter-logo.svg" width="48" height="48" alt="twitter logotype"></a>
             </li>

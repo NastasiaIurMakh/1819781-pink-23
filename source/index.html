@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -40,18 +41,22 @@
     <main class="page-main">
       <h1 class="visually-hidden">"PINK" - приложение для стилизации фотографий</h1>
       <section class="app">
-        <div class="app__wrapper">
+        <div class="app__wrapper-opacity">
           <h2 class="visually-hidden">
             Приложение "PINK"
           </h2>
-          <div class="app__slogan">
-            <p>
-              Взгляните на жизнь иначе!
-            </p>
+          <div class="app__background-img">
+            <div class="app__slogan">
+              <p>
+                Взгляните на жизнь иначе!
+              </p>
+            </div>
+            <div class="app__img">
+              <img  src="img/hand.png" width="320" height="286" alt="Смартфон в руке">
+            </div>
           </div>
-          <div class="app__img">
-            <img  src="img/hand.jpg" alt="Смартфон в руке">
-          </div>
+        </div>
+        <div class="app__wrapper-dark">
           <div class="app__link">
             <a href="https://www.apple.com/app-store/">Скачать приложение</a>
           </div>
@@ -101,7 +106,7 @@
             </li>
           </ul>
           <div class="features__pic">
-            <img src="img/phone-pink.jpg" width="157" height="320" alt="Смартфон с розовым экраном">
+            <img src="img/phone-pink.png" width="157" height="320" alt="Смартфон с розовым экраном">
           </div>
         </div>
       </section>
@@ -127,7 +132,7 @@
           <table class="tariff__table">
             <tr class="tariff__header">
               <th class="tariff__hidden"></th>
-              <th class="tariff__name-price">
+              <th class="tariff__name-price tariff__base">
                 <p class="tariff__name">БАЗА</p>
                 <p class="tariff__price">1,99 USD</p>
               </th>

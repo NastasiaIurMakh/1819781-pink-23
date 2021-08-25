@@ -1,0 +1,43 @@
+.catalog-photo {
+  margin: 0;
+  padding: 0;
+
+  &__item:not(:first-child):not(:last-child) {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0 20px 0 20px;
+  }
+
+  &__item:first-child {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item:first-child .catalog-photo__desc {
+    margin: 0 20px 20px 20px;
+  }
+
+  &__item:last-child {
+    margin: 0;
+    padding: 0 20px 0 20px;
+  }
+
+  &__img {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+  }
+
+  &__desc {
+    margin: 0;
+    padding: 25px 10px 25px 17px;
+    background-color: @light-grey-background;
+  }
+
+  &__text-bottom {
+    margin: 0;
+    padding: 49px 20px 52px 20px;
+  }
+}

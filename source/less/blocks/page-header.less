@@ -1,7 +1,24 @@
 .page-header {
   background-color: fade(@black-header, 30%);
+  color: @white-text;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 69px;
 
   &__logo {
-    padding-left: 20px;
+    height: 23px;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 110px;
+    padding-left: 130px;
+    padding-right: 130px;
   }
 }

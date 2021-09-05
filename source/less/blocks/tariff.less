@@ -3,6 +3,13 @@
   margin: 0;
   padding: 0;
 
+  &__wrapper {
+    height: 506px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   &__table {
     background-color: @white-background;
   }
@@ -40,4 +47,45 @@
     margin: 0;
     padding: 45px 20px 49px 20px;
   }
+
+  @media (max-width: @tablet-width) {
+    &__base,
+    &__unlim {
+      display: none;
+    }
+
+    &__hidden {
+      background-color: @dark-blue-block;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 534px;
+
+    &__table {
+      font-size: 18px;
+      line-height: 30px;
+      font-weight: 400;
+    }
+
+    &__name {
+      font-size: 18px;
+      line-height: 30px;
+      color: @white-text;
+      font-weight: 700;
+    }
+
+    &__price {
+      font-size: 24px;
+      font-weight: 300;
+      color: @white-text;
+    }
+
+
+  }
+
 }

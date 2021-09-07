@@ -10,7 +10,7 @@
     align-items: center;
     margin: 0;
     padding: 40px 20px;
-    height: 284px;
+    min-height: 284px;
   }
 
   &__social-list {
@@ -30,16 +30,15 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      height: 127px;
+      min-height: 127px;
       padding: 0 20px;
     }
   }
 
   @media (min-width: @desktop-width) {
     &__wrapper {
-      height: 197px;
+      min-height: 197px;
       padding: 0 130px;
     }
   }
-
 }

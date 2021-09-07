@@ -4,7 +4,7 @@
   padding: 0;
 
   &__wrapper {
-    height: 506px;
+    min-height: 506px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,11 +60,11 @@
   }
 
   @media (min-width: @tablet-width) {
-    height: 400px;
+    min-height: 400px;
   }
 
   @media (min-width: @desktop-width) {
-    height: 534px;
+    min-height: 534px;
 
     &__table {
       font-size: 18px;
@@ -84,8 +84,5 @@
       font-weight: 300;
       color: @white-text;
     }
-
-
   }
-
 }

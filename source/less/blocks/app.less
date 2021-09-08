@@ -1,21 +1,20 @@
 .app {
-  &__wrapper-opacity {
+  &__wrapper {
     margin: 0;
-    padding: 30px 0 0 0;
+    padding: 0;
+    padding-top: 30px;
+    min-height: 667px;
   }
 
-  &__wrapper-dark {
-    background-color: @dark-blue-background;
-    margin: 0;
-    padding: 28px 20px 38px 20px;
-  }
-
-  &__slogan {
+  &__slogan p {
     font-size: 24px;
     line-height: 28px;
     color: @white-text;
     font-weight: 300;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 350px;
   }
 
   &__link {
@@ -24,19 +23,47 @@
     font-weight: 700;
     color: @white-text;
     text-align: center;
+  }
 
-    a {
-      color: @white-text;
-    }
+  &__link a {
+    color: @white-text;
   }
 
   &__icon-list {
     list-style: none;
     padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 205px;
   }
 
   &__text {
     color: @white-text;
     text-align: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    &__wrapper {
+      min-height: 620px;
+      padding-top: 0;
+    }
+
+    &__slogan p {
+      margin-bottom: 39px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &__wrapper {
+      height: 743px;
+      padding-top: 0;
+    }
+
+    &__slogan p {
+      margin-bottom: 51px;
+    }
   }
 }

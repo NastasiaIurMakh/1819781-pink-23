@@ -1,6 +1,7 @@
 .main-nav {
   &__wrapper {
     margin: 0;
+    width: 100%;
   }
 
   &__toggle {
@@ -9,5 +10,39 @@
 
   &__list {
     margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+  }
+
+  &__list a {
+    list-style: none;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 700;
+    color: @white-text;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    &__list {
+      width: 620px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    &__list a {
+      line-height: 18px;
+      font-weight: 400;
+    }
   }
 }

@@ -3,27 +3,42 @@
   margin: 0;
   padding: 0;
 
-  &__text {
-    font-size: 24px;
-    line-height: 29px;
-    font-weight: 300;
-    text-align: center;
-    padding: 47px 20px 45px 20px;
-  }
-
-  &__contacts {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     margin: 0;
-    margin-bottom: -33px;
-    padding: 0 20px 74px 0;
+    padding: 40px 20px;
+    min-height: 284px;
   }
 
-  &__map {
+  &__social-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 172px;
     margin: 0;
     padding: 0;
   }
 
-  &__links {
-    margin: 0;
-    padding: 40px 20px 40px 20px;
+  @media (min-width: @tablet-width) {
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 127px;
+      padding: 0 20px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &__wrapper {
+      min-height: 197px;
+      padding: 0 130px;
+    }
   }
 }
